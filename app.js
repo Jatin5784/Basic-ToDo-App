@@ -1,8 +1,12 @@
 function addTodo(){
     const title=document.getElementById("title").value;
     const description=document.getElementById("description").value;
-    console.log(title);
-    console.log(description);
+    const originalContainer=document.getElementById("container").innerHTML;
+    
+    document.getElementById("container").innerHTML= originalContainer +
+    `<div>${title}</div>
+    <div>${description}</div>
+    <button>Mark as Done</button>`
 
 
 }
