@@ -3,10 +3,8 @@ function addTodo(){
     const description=document.getElementById("description").value;
     const originalContainer=document.getElementById("container").innerHTML;
     
-    document.getElementById("container").innerHTML= originalContainer +
+    document.getElementById("container").innerHTML= originalContainer + 
     `<div>${title}</div>
     <div>${description}</div>
-    <button>Mark as Done</button>`
-
-
+    <button onclick="this.innerHTML='Done!'; ">Mark as Done</button>`    
 }
